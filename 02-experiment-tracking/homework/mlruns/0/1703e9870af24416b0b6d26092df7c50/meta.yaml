@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/mlops-zoomcamp-2024/02-experiment-tracking/homework/mlruns/0/1703e9870af24416b0b6d26092df7c50/artifacts
+end_time: 1716833051896
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1703e9870af24416b0b6d26092df7c50
+run_name: sneaky-fish-406
+run_uuid: 1703e9870af24416b0b6d26092df7c50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716833040961
+status: 3
+tags: []
+user_id: codespace
