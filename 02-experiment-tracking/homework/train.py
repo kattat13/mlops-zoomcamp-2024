@@ -7,8 +7,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
 
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
-mlflow.set_experiment("new_experiment")
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_experiment("nyc_taxi_experiment")
 
 
 def load_pickle(filename: str):
@@ -43,7 +43,7 @@ def run_train(data_path: str):
         rmse = mean_squared_error(y_val, y_pred, squared=False)
 
         mlflow.log_metric("rmse", rmse)
-
+    
 
 if __name__ == '__main__':
     run_train()
