@@ -41,7 +41,8 @@ blocks:
   configuration:
     file_source:
       path: homework-03/transformers/vectorize.py
-  downstream_blocks: []
+  downstream_blocks:
+  - export
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -54,6 +55,24 @@ blocks:
   upstream_blocks:
   - prepare
   uuid: vectorize
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework-03/data_exporters/export.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: export
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - vectorize
+  uuid: export
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
